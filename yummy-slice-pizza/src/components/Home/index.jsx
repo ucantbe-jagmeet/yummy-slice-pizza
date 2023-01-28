@@ -1,0 +1,39 @@
+import React from "react";
+import Pizza1 from "../../assets/pizza1.png";
+const index = () => {
+  return (
+    <>
+      <div className="flex h-[92vh] justify-evenly items-center">
+        <div className="">
+          <h1 className="text-[#379498] text-6xl uppercase ">
+            Grab your next
+            <br />
+            <span className="font-bold text-[6rem] text-[#379598] tracking-widest ">
+              pizza
+            </span>
+            <br />
+            from here
+          </h1>
+          <h1 className="text-xl font-semibold mt-2">Pick Your Slice</h1>
+          <p className="my-4">
+            Pizza comes in square box, but circle in shape and triangular in
+            slices .<br />
+            Its Easy to understand a Pizza but its impossible to understand a
+            girl
+          </p>
+          <a
+            src="#"
+            className=" px-4 py-2 rounded-lg text-white bg-[#379498] mt-4 hover:scale-105 cursor-pointer "
+          >
+            View More
+          </a>
+        </div>
+        <div>
+          <img src={Pizza1} alt="" className="h-[75vh]" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default index;
