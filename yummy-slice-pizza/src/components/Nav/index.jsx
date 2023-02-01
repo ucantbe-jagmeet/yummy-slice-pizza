@@ -8,7 +8,7 @@ import Img from "../../assets/logo1.png";
 const Nav = () => {
   return (
     <>
-      <nav className="flex h-16  justify-between items-center border-b-2 shadow-lg">
+      <nav className="flex h-16 bg-white justify-between items-center border-b-2 shadow-lg ">
         <ul className="flex">
           <li className="ml-10 text-xl text-[#379498] hover:text-[#47dde2] cursor-pointer font-medium hover:scale-105">
             <a href="home">Home</a>
@@ -20,10 +20,10 @@ const Nav = () => {
             <a href="#">Offers</a>
           </li>
           <li className="ml-5 text-xl text-[#379498] hover:text-[#47dde2]  cursor-pointer font-medium hover:scale-105">
-            <a href="#">Reviews</a>
+            <a href="#reviews">Reviews</a>
           </li>
           <li className="ml-5 text-xl text-[#379498] hover:text-[#47dde2]  cursor-pointer font-medium hover:scale-105">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <div className="-ml-32">
@@ -36,10 +36,15 @@ const Nav = () => {
             </a>
           </li>
           <li className="ml-4 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer  hover:scale-105">
-            <RiHandHeartLine />
+            <a href="#reviews">
+              {" "}
+              <RiHandHeartLine />
+            </a>
           </li>
           <li className="ml-4 mr-10 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer hover:scale-105">
-            <MdDeliveryDining />
+            <a href="#footer">
+              <MdDeliveryDining />
+            </a>
           </li>
         </ul>
       </nav>

@@ -1,10 +1,13 @@
-import { useState } from "react";
-import React from "react";
+import { React } from "react";
 import "./index.css";
 import Nav from "../src/components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Menu from "./components/Menu";
+import Reviews from "./components/Reviews";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
@@ -12,6 +15,9 @@ function App() {
       <Home />
       <About />
       <Menu />
+      <Reviews />
+      <Contact />
+      <Footer />
     </>
   );
 }

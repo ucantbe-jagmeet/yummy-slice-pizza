@@ -10,12 +10,7 @@ const index = () => {
         </h1>
         <CTA />
 
-        <div className="my__cards h-[100vh] w-auto grid grid-cols-3 p-10 gap-10">
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
+        <div className="my__cards h-auto w-auto grid grid-cols-3 p-10 gap-10">
           <Cards />
         </div>
       </div>
