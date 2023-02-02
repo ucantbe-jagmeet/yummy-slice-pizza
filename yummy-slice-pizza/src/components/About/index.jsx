@@ -1,5 +1,5 @@
 import React from "react";
-import Jagmeet from "../../assets/jagmeet.jpeg";
+import Abhi from "../../assets/abhi.jpg";
 import Img from "../../assets/logo1.png";
 
 const index = () => {
@@ -17,9 +17,9 @@ const index = () => {
               A Dream By
             </h1>
             <img
-              src={Jagmeet}
+              src={Abhi}
               alt="Owner's Image"
-              className="cursor-pointer h-[42vh] border-white border-4 hover:scale-105 hover:shadow-lg hover:shadow-[#56c7cb] hover:rounded-lg transition"
+              className=" cursor-pointer h-[42vh] border-white border-4 hover:scale-105 hover:shadow-lg hover:shadow-[#56c7cb] hover:rounded-lg transition"
             />
             <h1 className="text-white  uppercase text-2xl my-3 font-semibold tracking-widest">
               Abhishek Kumar

@@ -3,7 +3,7 @@ import Pizza1 from "../../assets/pizza1.png";
 const index = () => {
   return (
     <>
-      <div className="flex h-[92vh] justify-evenly items-center">
+      <div className="home flex h-[92vh] justify-evenly items-center">
         <div className="">
           <h1 className="text-[#379498] text-6xl uppercase ">
             Grab your next
