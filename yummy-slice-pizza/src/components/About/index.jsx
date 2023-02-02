@@ -5,7 +5,7 @@ import Img from "../../assets/logo1.png";
 const index = () => {
   return (
     <>
-      <div className="bg-[#379498] h-[100vh] ">
+      <div id="about" className="bg-[#379498] h-[100vh] ">
         <h1 className=" text-white text-center text-4xl pt-4">About Us</h1>
 
         <div className="content  grid grid-cols-2 ">

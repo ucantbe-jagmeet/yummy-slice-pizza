@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import AVTR1 from "./images/AVTR1.png";
-import AVTR2 from "./images/AVTR2.png";
+import AVTR1 from "./images/AVTR1.jpeg";
+import AVTR2 from "./images/AVTR2.jpeg";
 import AVTR3 from "./images/AVTR3.png";
 import AVTR4 from "./images/AVTR4.png";
 

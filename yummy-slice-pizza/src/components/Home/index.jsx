@@ -22,8 +22,8 @@ const index = () => {
             girl
           </p>
           <a
-            href="#menu"
-            className=" px-4 py-2 rounded-lg text-white bg-[#379498] mt-4 hover:scale-105  cursor-pointer "
+            href="#about"
+            className=" px-4 py-2 rounded-lg text-white bg-[#379498] mt-4 hover:scale-105 hover:border-2 hover:border-[#379489] hover:bg-white hover:text-[#379489] cursor-pointer "
           >
             View More
           </a>
