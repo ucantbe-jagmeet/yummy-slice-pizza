@@ -8,22 +8,22 @@ const data = [
   {
     avatar: AVTR1,
     name: "Pizza",
-    price: "59 Rs",
+    price: "59",
   },
   {
     avatar: AVTR2,
     name: "Burgers",
-    price: "39 Rs",
+    price: "39",
   },
   {
     avatar: AVTR3,
     name: "Sandwich",
-    price: "79 Rs",
+    price: "79",
   },
   {
     avatar: AVTR4,
     name: "Shakes",
-    price: "79 Rs",
+    price: "79",
   },
 ];
 
@@ -49,7 +49,7 @@ const index = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit dasa.
               </h2>
               <h1 className=" text-white text-2xl hover:scale-105  ">
-                Starting: {price}
+                Starting: ₹ {price}
               </h1>
               <h2 className="text-[0.75rem] items-start -mt-6">
                 *Prices may vary on size of product

@@ -5,7 +5,7 @@ const index = () => {
   return (
     <>
       <div id="footer" className="h-[70vh] bg-[#379498] overflow-hidden">
-        <div className="grid grid-cols-4 pl-28 pt-16 mb-32">
+        <div className="grid grid-cols-4 pl-28 pt-16 mb-24">
           <div className="text-white">
             <h1 className="text-3xl cursor-pointer">Locations</h1>
             <ul>
@@ -19,7 +19,10 @@ const index = () => {
             <h1 className="text-3xl cursor-pointer">Quick Links</h1>
             <ul>
               <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="home">Home</a>
+                <a href="#nav">Home</a>
+              </li>
+              <li className="mt-4 cursor-pointer hover:scale-105">
+                <a href="#about">About</a>
               </li>
               <li className="mt-4 cursor-pointer hover:scale-105">
                 <a href="#menu">Menu</a>
