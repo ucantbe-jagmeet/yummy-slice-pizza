@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  locations,
+  quickLinks,
+  deliveryInfo,
+  socialLinks,
+} from "./data_footer";
 
 const index = () => {
   const msg = "I'd like to chat with you";
@@ -7,79 +13,77 @@ const index = () => {
       <div id="footer" className="h-[70vh] bg-[#379498] overflow-hidden">
         <div className="grid grid-cols-4 pl-28 pt-16 mb-24">
           <div className="text-white">
-            <h1 className="text-3xl cursor-pointer">Locations</h1>
+            <h1 className="text-3xl cursor-pointer hover:scale-105 hover:text-[#56eef3]">
+              Locations
+            </h1>
             <ul>
-              <li className="mt-4  cursor-pointer hover:scale-105">Gagret</li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                Amb (opening Soon)
-              </li>
+              {locations.map((links) => {
+                const { id, text } = links;
+                return (
+                  <li
+                    key={id}
+                    className="mt-4  cursor-pointer hover:scale-105 hover:text-[#56eef3]"
+                  >
+                    {text}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="text-white">
-            <h1 className="text-3xl cursor-pointer">Quick Links</h1>
+            <h1 className="text-3xl cursor-pointer hover:scale-105 hover:text-[#56eef3]">
+              Quick Links
+            </h1>
             <ul>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="#nav">Home</a>
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="#about">About</a>
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="#menu">Menu</a>
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="#offers">Offers</a>
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="#reviews">Reviews</a>
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="#contact">Contact</a>
-              </li>
+              {quickLinks.map((links) => {
+                const { id, href, title } = links;
+                return (
+                  <li
+                    key={id}
+                    className="mt-4 cursor-pointer hover:scale-105 hover:text-[#56eef3]"
+                  >
+                    <a href={href}>{title}</a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="text-white">
-            <h1 className="text-3xl cursor-pointer">Delivery Info</h1>
+            <h1 className="text-3xl cursor-pointer hover:scale-105 hover:text-[#56eef3]">
+              Delivery Info
+            </h1>
             <ul>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                {" "}
-                +91 95491-22320
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                {" "}
-                +91 62302-22320
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                {" "}
-                abhishek.kumar85808@gmail.com
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                {" "}
-                Himachal Pradesh, India - 177201
-              </li>
+              {deliveryInfo.map((links) => {
+                const { id, text } = links;
+                return (
+                  <li
+                    key={id}
+                    className="mt-4 cursor-pointer hover:scale-105 hover:text-[#56eef3]"
+                  >
+                    {text}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="text-white">
-            <h1 className="text-3xl cursor-pointer">Follow Us</h1>
+            <h1 className="text-3xl cursor-pointer hover:scale-105 hover:text-[#56eef3]">
+              Follow Us
+            </h1>
             <ul>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a
-                  href="https://instagram.com/pizzayummyslice?igshid=OGQ2MjdiOTE="
-                  target="_blank"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="whatsapp://send?abid=919549122320 " target="_blank">
-                  Whatsapp
-                </a>
-              </li>
-              <li className="mt-4 cursor-pointer hover:scale-105">
-                <a href="mailto:abhishek.kumar85808@gmail.com " target="_blank">
-                  Gmail
-                </a>
-              </li>
+              {socialLinks.map((links) => {
+                const { id, href, title } = links;
+                return (
+                  <li
+                    key={id}
+                    className="mt-4 cursor-pointer hover:scale-105 hover:text-[#56eef3]"
+                  >
+                    <a href={href} target="_blank">
+                      {title}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
