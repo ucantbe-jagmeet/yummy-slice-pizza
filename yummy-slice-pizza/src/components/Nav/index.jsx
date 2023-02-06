@@ -10,36 +10,37 @@ const Nav = () => {
     <>
       <nav
         id="nav"
-        className="flex h-16 bg-white justify-between items-center border-b-2 shadow-lg "
+        className="md:flex h-16 w-full bg-white md:justify-between md:items-center border-b-2 shadow-lg sticky top-0 "
       >
-        <ul className="flex">
+        <ul className="md:flex ">
           {pageLinks.map((link) => {
+            const { id, href, title } = link;
             return (
               <li
-                key={link.id}
-                className="ml-10 text-xl text-[#379498] hover:text-[#47dde2] cursor-pointer font-medium hover:scale-105"
+                key={id}
+                className="md:ml-10 md:text-xl text-[#379498] hover:text-[#47dde2] cursor-pointer font-medium hover:scale-105 sm:ml-4 duration-300"
               >
-                <a href={link.href}>{link.text}</a>
+                <a href={href}>{title}</a>
               </li>
             );
           })}
         </ul>
-        <div className="-ml-32">
+        <div className="md:-ml-32">
           <img src={Img} alt="Img here" className="h-14 mb-1" />
         </div>
-        <ul className="flex">
-          <li className="ml-4 mr-2 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer  hover:scale-105">
+
+        <ul className="md:flex">
+          <li className="ml-4 mr-2 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer  hover:scale-105 duration-300">
             <a href="https://goo.gl/maps/pYDRx1DP9o5wRfAGA" target="_blank">
               <HiLocationMarker />
             </a>
           </li>
-          <li className="ml-4 mr-2 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer  hover:scale-105">
+          <li className="ml-4 mr-2 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer  hover:scale-105 duration-300">
             <a href="#reviews">
-              {" "}
               <RiHandHeartLine />
             </a>
           </li>
-          <li className="ml-4 mr-10 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer hover:scale-105">
+          <li className="ml-4 mr-10 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer hover:scale-105 duration-300">
             <a href="#footer">
               <MdDeliveryDining />
             </a>

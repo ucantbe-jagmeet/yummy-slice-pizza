@@ -34,12 +34,12 @@ const index = () => {
         return (
           <div
             key={index}
-            className="card h-60 w-96 border-2 flex bg-[#379498] rounded-lg cursor-pointer "
+            className="card h-60 w-96 border-2 flex bg-[#379498] rounded-lg cursor-pointer hover:bg-[#42bbc0] duration-500"
           >
             <img
               src={avatar}
               alt=""
-              className=" w-[50%] h-56 rounded-3xl p-3 hover:scale-105 cursor-pointer "
+              className=" w-[50%] h-56 rounded-3xl p-3  cursor-pointer "
             />
             <div className="card__item w-[50%] flex flex-col items-start justify-evenly ">
               <h1 className="text-white text-2xl tracking-wider uppercase hover:scale-105 pt-2">

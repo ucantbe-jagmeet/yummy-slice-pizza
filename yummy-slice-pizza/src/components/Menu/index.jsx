@@ -4,7 +4,7 @@ import Cards from "./Cards";
 const index = () => {
   return (
     <>
-      <div id="menu" className="h-[100vh] ">
+      <div id="menu" className="h-[100vh] scroll-mt-16 ">
         <h1 className="text-[#379498] text-5xl mt-6 text-center">
           Order Your Favourite Food
         </h1>

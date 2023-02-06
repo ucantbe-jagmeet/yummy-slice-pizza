@@ -6,6 +6,9 @@ html{
     scroll-behavior: smooth;
 }
 
-.swiper-pagination-bullet-active{
-    color: #379498;
+.swiper-pagination-bullet-active {
+    background-color: #6dcdd0 !important;
+}
+.swiper-pagination-bullet {
+    background-color: #6dcdd0 !important;
 }

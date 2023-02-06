@@ -3,10 +3,10 @@ import Img from "./img.jpg";
 const index = () => {
   return (
     <>
-      <div id="contact" className="h-[100vh]">
-        <h1 className="text-center text-[#379498] text-5xl pt-5">Contact</h1>
+      <div id="contact" className="h-[100vh] scroll-mt-16">
+        <h1 className="text-center text-[#379498] text-5xl pt-5 ">Contact</h1>
         <div className="h-[90vh] flex justify-evenly items-center">
-          <div className="left border-2 h-[70vh] w-[30vw] bg-[#379498] rounded-lg text-white">
+          <div className="left border-2 h-[70vh] w-[30vw] bg-[#379498] rounded-lg text-white hover:bg-[#42bbc0] duration-300">
             <h1 className="text-center uppercase text-4xl mt-5">Find Us </h1>
             <p className="ml-5 text-3xl tracking-widest mt-4">
               YUMMY SLICE PIZZA <br />
@@ -35,7 +35,7 @@ const index = () => {
             <img
               src={Img}
               alt=""
-              className="h-[75vh] w-[30vw] cursor-pointer outline-none rounded-2xl hover:shadow-2xl hover:shadow-[#378498]"
+              className="h-[75vh] w-[30vw] cursor-pointer outline-none rounded-2xl hover:shadow-2xl hover:shadow-[#378498] duration-500"
             />
           </div>
         </div>

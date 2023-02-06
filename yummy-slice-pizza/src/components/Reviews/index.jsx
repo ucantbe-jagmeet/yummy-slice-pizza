@@ -38,7 +38,10 @@ const data = [
 const index = () => {
   return (
     <>
-      <div id="reviews" className="h-[100vh]  bg-[#379498] text-center">
+      <div
+        id="reviews"
+        className="h-[100vh]  bg-[#379498] text-center scroll-mt-16"
+      >
         <h1 className="text-white text-center pt-7 tracking-wider">
           Review From Customers
         </h1>
@@ -52,7 +55,7 @@ const index = () => {
               clickable: true,
             }}
             modules={[Pagination]}
-            className="mySwiper h-[60vh] w-[70vw] bg-white rounded-2xl text-center"
+            className="mySwiper h-[60vh] w-[70vw] bg-white rounded-2xl text-center "
           >
             {data.map(({ avatar, name, review }, index) => {
               return (
@@ -64,15 +67,17 @@ const index = () => {
                     <img
                       src={avatar}
                       alt="Image"
-                      className="aspect-square rounded-[50%] w-64 ml-10 border-[0.65rem] border-[#379498]"
+                      className="aspect-square rounded-[50%] w-64 ml-10 border-[0.65rem] border-[#379498] cursor-pointer hover:border-[#56eef3] duration-500"
                     />
                   </div>
 
                   <div className="w-3/5 text-[#378498]">
-                    <h2 className="text-5xl uppercase tracking-wider">
+                    <h2 className="text-5xl uppercase tracking-wider hover:text-[#56eef3] cursor-pointer duration-300">
                       {name}
                     </h2>
-                    <p className="mt-7 ml-10">{review}</p>
+                    <p className="mt-7 ml-10 hover:text-[#56eef3] cursor-pointer duration-300">
+                      {review}
+                    </p>
                   </div>
                 </SwiperSlide>
               );

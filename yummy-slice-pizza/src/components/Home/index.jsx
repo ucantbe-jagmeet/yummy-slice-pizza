@@ -3,7 +3,10 @@ import Pizza1 from "../../assets/pizza1.png";
 const index = () => {
   return (
     <>
-      <div id="home" className="home flex h-[92vh] justify-evenly items-center">
+      <div
+        id="home"
+        className="home flex h-[92vh] w-[100%] justify-evenly items-center scroll-mt-16"
+      >
         <div className="">
           <h1 className="text-[#379498] text-6xl uppercase ">
             Grab your next
@@ -23,7 +26,7 @@ const index = () => {
           </p>
           <a
             href="#about"
-            className=" px-4 py-2 rounded-lg text-white bg-[#379498] mt-4 hover:scale-105 hover:border-2 hover:border-[#379489] hover:bg-white hover:text-[#379489] cursor-pointer "
+            className=" px-4 py-2 rounded-lg text-white bg-[#379498] mt-4 hover:scale-105 hover:border-2 hover:bg-white duration-300 hover:border-[#42bbc0] hover:text-[#42bbc0] cursor-pointer "
           >
             View More
           </a>
