@@ -9,7 +9,6 @@ import {
 import Logo from "../../assets/logo1.png";
 
 const index = () => {
-  const msg = "I'd like to chat with you";
   return (
     <>
       <div
