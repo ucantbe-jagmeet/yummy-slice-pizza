@@ -31,7 +31,7 @@ const Nav = () => {
             );
           })}
         </ul>
-        <div className="md:mx-10 mx-4">
+        <div className="md:mx-10 ml-[8.3rem] ">
           <img src={Img} alt="Img here" className="h-14 mb-1 " />
         </div>
 
@@ -55,9 +55,9 @@ const Nav = () => {
 
         <div
           onClick={handleNav}
-          className="block md:hidden text-[#379498] pr-5 cursor-pointer"
+          className="block md:hidden text-[#379498] pr-2 cursor-pointer"
         >
-          {!Nav ? <RiMenuUnfoldLine size={20} /> : <RiMenuFoldLine size={20} />}
+          {!Nav ? <RiMenuUnfoldLine size={25} /> : <RiMenuFoldLine size={25} />}
         </div>
         <div
           className={

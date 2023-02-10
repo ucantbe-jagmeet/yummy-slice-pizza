@@ -11,12 +11,12 @@ const index = () => {
         </h1>
 
         <div className="content  md:grid md:grid-cols-2 flex justify-center pt-5">
-          <div className="card md:h-[70vh] md:w-[25vw] md:ml-[12rem] md:mt-16 border-white border-4 h-[50vh] w-[50vw] rounded-xl flex flex-col justify-around items-center hover:bg-[#42bbc0] duration-500 ">
+          <div className="card md:h-[70vh] md:w-[25vw] md:ml-[12rem] md:mt-16 border-white border-4 h-[50vh] w-[80vw] rounded-xl flex flex-col justify-around items-center hover:bg-[#42bbc0] duration-500 ">
             <div className="">
               <img
                 src={Img}
                 alt="Img here"
-                className="md:h-14 -mb-1 rounded-md h-10 md:mt-4"
+                className="md:h-14  rounded-md h-16 md:mt-4"
               />
             </div>
             <h1 className="text-white uppercase md:text-2xl md:my-3 font-semibold tracking-wider hidden md:block">
@@ -27,7 +27,7 @@ const index = () => {
               alt="Owner's Image"
               className=" cursor-pointer md:h-[42vh] border-white border-4 hover:scale-105 hover:shadow-lg hover:shadow-[#56c7cb] hover:rounded-lg transition duration-500 h-[30vh] border-1"
             />
-            <h1 className="text-white  uppercase md:text-2xl text-xl md:my-3 font-semibold tracking-widest">
+            <h1 className="text-white  uppercase md:text-2xl text-xl md:my-3 font-semibold tracking-widest pb-2">
               Abhishek Kumar
             </h1>
           </div>
