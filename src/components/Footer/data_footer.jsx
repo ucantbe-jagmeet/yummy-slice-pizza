@@ -45,11 +45,11 @@ export const quickLinks = [
 export const deliveryInfo = [
   {
     id: 1,
-    text: "+91 95491-22320",
+    text: "95491-22320",
   },
   {
     id: 2,
-    text: "+91 62302-22320",
+    text: "62302-22320",
   },
   {
     id: 3,

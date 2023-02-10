@@ -34,24 +34,24 @@ const index = () => {
         return (
           <div
             key={index}
-            className="card h-60 w-96 border-2 flex bg-[#379498] rounded-lg cursor-pointer hover:bg-[#42bbc0] duration-500"
+            className="card md:h-60 md:w-96 border-2 flex flex-col md:flex-row bg-[#379498] rounded-lg cursor-pointer hover:bg-[#42bbc0] duration-500"
           >
             <img
               src={avatar}
               alt=""
-              className=" w-[50%] h-56 rounded-3xl p-3  cursor-pointer "
+              className=" md:w-[50%] md:h-56 md:rounded-3xl  h-48 w-[86%] md:p-3 pt-2 rounded-xl mx-auto cursor-pointer  "
             />
-            <div className="card__item w-[50%] flex flex-col items-start justify-evenly ">
-              <h1 className="text-white text-2xl tracking-wider uppercase hover:scale-105 pt-2">
+            <div className="card__item md:w-[50%] flex flex-col md:items-start md:justify-evenly w-90% md:pl-0 pl-5">
+              <h1 className="text-white md:text-2xl tracking-wider uppercase hover:scale-105 text-lg md:pt-0 pt-2">
                 {name}
               </h1>
-              <h2 className="tracking-wide text-[0.75rem] -mt-7 ml-1 ">
+              <h2 className="tracking-wide md:text-[0.75rem] md:-mt-7 md:ml-1 hidden md:block">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit dasa.
               </h2>
-              <h1 className=" text-white text-2xl hover:scale-105  ">
+              <h1 className=" text-white md:text-2xl hover:scale-105 text-md md:pb-0 pb-4 ">
                 Starting: ₹ {price}
               </h1>
-              <h2 className="text-[0.75rem] items-start -mt-6">
+              <h2 className="md:text-[0.75rem] md:items-start md:-mt-6 hidden md:block">
                 *Prices may vary on size of product
               </h2>
             </div>

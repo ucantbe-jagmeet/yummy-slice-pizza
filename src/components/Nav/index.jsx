@@ -1,18 +1,24 @@
-import React from "react";
+import { React, useState } from "react";
 import { MdDeliveryDining } from "react-icons/md";
 import { RiHandHeartLine } from "react-icons/ri";
 import { HiLocationMarker } from "react-icons/hi";
+import { RiMenuFoldLine, RiMenuUnfoldLine } from "react-icons/ri";
 
 import Img from "../../assets/logo1.png";
 import { pageLinks } from "./data.js";
 const Nav = () => {
+  const [Nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!Nav);
+  };
+
   return (
     <>
       <nav
         id="nav"
-        className="md:flex h-16 w-full bg-white md:justify-between md:items-center border-b-2 shadow-lg sticky top-0 "
+        className="flex h-16 w-full  bg-white justify-between items-center border-b-2 shadow-lg sticky top-0 z-50 "
       >
-        <ul className="md:flex ">
+        <ul className="md:flex hidden ">
           {pageLinks.map((link) => {
             const { id, href, title } = link;
             return (
@@ -25,11 +31,11 @@ const Nav = () => {
             );
           })}
         </ul>
-        <div className="md:-ml-32">
-          <img src={Img} alt="Img here" className="h-14 mb-1" />
+        <div className="md:mx-10 mx-4">
+          <img src={Img} alt="Img here" className="h-14 mb-1 " />
         </div>
 
-        <ul className="md:flex">
+        <ul className="md:flex hidden">
           <li className="ml-4 mr-2 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer  hover:scale-105 duration-300">
             <a href="https://goo.gl/maps/pYDRx1DP9o5wRfAGA" target="_blank">
               <HiLocationMarker />
@@ -46,6 +52,51 @@ const Nav = () => {
             </a>
           </li>
         </ul>
+
+        <div
+          onClick={handleNav}
+          className="block md:hidden text-[#379498] pr-5 cursor-pointer"
+        >
+          {!Nav ? <RiMenuUnfoldLine size={20} /> : <RiMenuFoldLine size={20} />}
+        </div>
+        <div
+          className={
+            Nav
+              ? "fixed left-0 top-0 w-[60%] h-full border-r  bg-[#fff] ease-in-out duration-500"
+              : " fixed left-[-100%] "
+          }
+        >
+          <div className="">
+            <img src={Img} alt="Img here" className="h-14 mx-auto mt-2" />
+            <ul className="w-full  font-bold text-[#379498] ">
+              {pageLinks.map((link) => {
+                const { id, href, title } = link;
+                return (
+                  <li key={id} className="p-4 border-b border-[#379498]">
+                    <a href={href}>{title}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <ul className=" flex pt-6 justify-end">
+            <li className="ml-4 mr-2 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer  hover:scale-105 duration-300">
+              <a href="https://goo.gl/maps/pYDRx1DP9o5wRfAGA" target="_blank">
+                <HiLocationMarker />
+              </a>
+            </li>
+            <li className="ml-4 mr-2 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer  hover:scale-105 duration-300">
+              <a href="#reviews">
+                <RiHandHeartLine />
+              </a>
+            </li>
+            <li className="ml-4 mr-10 text-3xl text-[#379498] hover:text-[#47dde2]  cursor-pointer hover:scale-105 duration-300">
+              <a href="#footer">
+                <MdDeliveryDining />
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );

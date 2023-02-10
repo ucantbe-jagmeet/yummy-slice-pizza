@@ -13,34 +13,40 @@ const index = () => {
     <>
       <div
         id="footer"
-        className="h-[70vh] grid grid-cols-2 bg-[#379498] overflow-hidden"
+        className="md:h-[70vh] h-[80vh] grid md:grid-cols-2 bg-[#379498] overflow-hidden"
       >
-        <div className="flex flex-col items-center justify-around">
-          <div className=" h-[40%] w-[80%] border-2 border-white rounded-lg flex items-center justify-around cursor-pointer">
-            <img src={Logo} alt="" className="h-24 rounded-lg" />
-            <h1 className="text-white text-center">
+        <div className="flex flex-col items-center justify-around m-10 md:mt-0 order-2 md:order-1 ">
+          <div className=" h-[23vh] w-[100%] border-2 border-white rounded-lg flex flex-col md:flex-row items-center justify-around cursor-pointer  ">
+            <img
+              src={Logo}
+              alt=""
+              className="md:h-24 rounded-lg h-20  md:my-0 my-2"
+            />
+            <h1 className="text-white text-center ">
               Regards
               <br />
-              <span className="text-4xl">Yummy Slice Pizza</span>
+              <span className="block md:text-3xl text-2xl mb-2">
+                Yummy Slice Pizza
+              </span>
             </h1>
           </div>
-          <h1 className=" text-gray-300 text-2xl -mb-10">
+          <h1 className=" text-gray-300 md:text-2xl md:-mb-10 mt-5 text-xs">
             Copyright©2023 By jagmeetsingh2921@gmail.com
           </h1>
         </div>
 
-        <div className="grid grid-cols-4 pl-28 pt-16 mb-24">
-          <div className="text-white">
-            <h1 className="text-2xl cursor-pointer hover:scale-105 hover:text-[#56eef3]">
+        <div className="grid md:grid-cols-4 md:pl-28 md:pt-16 md:mb-24 md:gap-0 grid-cols-2 gap-4 ml-5 md:ml-0 order-1 md:order-2 pt-4 ">
+          <div className="text-white ">
+            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3]">
               Locations
             </h1>
-            <ul className="inline-block">
+            <ul className="inline-block  md:text-md text-sm">
               {locations.map((links) => {
                 const { id, text } = links;
                 return (
                   <li
                     key={id}
-                    className="mt-4  cursor-pointer hover:scale-105 hover:text-[#56eef3] "
+                    className="md:mt-4  cursor-pointer hover:scale-105 hover:text-[#56eef3] "
                   >
                     {text}
                   </li>
@@ -48,17 +54,17 @@ const index = () => {
               })}
             </ul>
           </div>
-          <div className="text-white">
-            <h1 className="text-2xl cursor-pointer hover:scale-105 hover:text-[#56eef3]">
+          <div className="text-white ">
+            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3] ">
               Quick Links
             </h1>
-            <ul className="inline-block">
+            <ul className="inline-block  md:text-md text-sm">
               {quickLinks.map((links) => {
                 const { id, href, title } = links;
                 return (
                   <li
                     key={id}
-                    className="mt-4 cursor-pointer hover:scale-105 hover:text-[#56eef3]"
+                    className="md:mt-4 cursor-pointer md:hover:scale-105 hover:text-[#56eef3]"
                   >
                     <a href={href}>{title}</a>
                   </li>
@@ -66,17 +72,17 @@ const index = () => {
               })}
             </ul>
           </div>
-          <div className="text-white mr-5">
-            <h1 className="text-2xl cursor-pointer hover:scale-105 hover:text-[#56eef3]">
+          <div className="text-white ">
+            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3]">
               Delivery Info
             </h1>
-            <ul className="inline-block ">
+            <ul className="inline-block  md:text-md text-sm">
               {deliveryInfo.map((links) => {
                 const { id, text } = links;
                 return (
                   <li
                     key={id}
-                    className="mt-4 cursor-pointer hover:scale-105 hover:text-[#56eef3] break-all "
+                    className="md:mt-4 cursor-pointer md:hover:scale-105 hover:text-[#56eef3] break-all "
                   >
                     {text}
                   </li>
@@ -84,17 +90,17 @@ const index = () => {
               })}
             </ul>
           </div>
-          <div className="text-white">
-            <h1 className="text-2xl cursor-pointer hover:scale-105 hover:text-[#56eef3] ">
+          <div className="text-white ">
+            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3] ">
               Follow Us
             </h1>
-            <ul className="inline-block">
+            <ul className="inline-block  md:text-md text-sm">
               {socialLinks.map((links) => {
                 const { id, href, title } = links;
                 return (
                   <li
                     key={id}
-                    className="mt-4 cursor-pointer hover:scale-105 hover:text-[#56eef3]"
+                    className="md:mt-4 cursor-pointer md:hover:scale-105 hover:text-[#56eef3]"
                   >
                     <a href={href} target="_blank">
                       {title}
