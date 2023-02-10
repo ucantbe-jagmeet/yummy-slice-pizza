@@ -4,13 +4,13 @@ import Cards from "./Cards";
 const index = () => {
   return (
     <>
-      <div id="menu" className="h-auto scroll-mt-16 overflow-hidden mb-4">
+      <div id="menu" className="h-auto md:scroll-mt-16 overflow-hidden ">
         <h1 className="text-[#379498] md:text-5xl md:mt-6 text-center text-[1.6rem] mt-4">
           Order Your Favourite Food
         </h1>
         <CTA />
 
-        <div className="my__cards h-auto w-[100vw] grid grid-cols-3 grid-rows-3 md:grid-cols-3 md:grid-rows-2 p-3 gap-2 md:gap-x-12 md:gap-y-4">
+        <div className="my__cards h-auto w-[100vw] grid grid-cols-3 grid-rows-3 md:grid-cols-3 md:grid-rows-2 p-3 gap-2 md:ml-12 md:gap-x-5 md:gap-y-5">
           <Cards />
         </div>
       </div>

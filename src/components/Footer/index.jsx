@@ -35,7 +35,7 @@ const index = () => {
           </h1>
         </div>
 
-        <div className="grid md:grid-cols-4 md:pl-28 md:pt-16 md:mb-24 md:gap-0 grid-cols-2 gap-4 ml-5 md:ml-0 order-1 md:order-2 pt-4 ">
+        <div className="grid md:grid-cols-4 md:pl-28 md:pt-16 md:mb-24 md:gap-0 grid-cols-2 gap-4 ml-11 md:ml-0 order-1 md:order-2 pt-4 ">
           <div className="text-white ">
             <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3]">
               Locations

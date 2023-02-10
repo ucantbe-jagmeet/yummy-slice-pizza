@@ -6,6 +6,9 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 .swiper-pagination-bullet-active {
     background-color: #6dcdd0 !important;
 }

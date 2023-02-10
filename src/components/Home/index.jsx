@@ -20,7 +20,7 @@ const index = () => {
           <h1 className="md:text-xl text-md  font-semibold mt-2 md:mt-5 ">
             Pick Your Slice
           </h1>
-          <p className="my-4 hidden ">
+          <p className="my-4 hidden md:block ">
             Pizza comes in square box, but circle in shape and triangular in
             slices .<br />
             Its Easy to understand a Pizza but its impossible to understand a

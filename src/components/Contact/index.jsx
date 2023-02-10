@@ -4,7 +4,7 @@ const index = () => {
   return (
     <>
       <div id="contact" className="h-auto md:h-[100vh] scroll-mt-16">
-        <h1 className="text-center text-[#379498] md:text-5xl text-3xl md:pt-5 pt-3 ">
+        <h1 className="text-center text-[#379498] md:text-5xl text-3xl md:pt-5 pt-5 ">
           Contact
         </h1>
         <div className="h-auto flex justify-evenly items-center flex-col md:flex-row pt-10 ">
@@ -17,10 +17,10 @@ const index = () => {
 
             <h2 className="text-center pt-10 text-2xl">Opening Hours</h2>
             <p className="text-center tracking-wider pt-4">
-              Mon-Fri: 11:00 AM - 8:00 PM
+              Mon-Fri: 10:00 AM - 10:00 PM
             </p>
             <p className="text-center tracking-wider pt-3">
-              Sat-Sun: 12:00 PM - 9:00 PM
+              Sat-Sun: 11:00 AM - 10:00 PM
             </p>
 
             <div className="mt-28">
