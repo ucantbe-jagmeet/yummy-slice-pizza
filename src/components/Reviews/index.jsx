@@ -45,7 +45,7 @@ const index = () => {
         <h1 className="text-white text-center pt-7 tracking-wider md:text-[1rem] text-lg">
           Reviews From Customers
         </h1>
-        <h1 className="text-white text-center md:text-3xl uppercase tracking-widest text-3xl">
+        <h1 className="text-white text-center md:text-3xl uppercase tracking-widest text-3xl pt-2">
           What they Say
         </h1>
         <div className="md:pt-20 pt-16 ">
