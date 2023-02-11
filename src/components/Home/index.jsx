@@ -5,9 +5,9 @@ const index = () => {
     <>
       <div
         id="home"
-        className="home w-full   h-[93vh] md:flex md:justify-center md:items-center md:gap-36 md:scroll-mt-16 "
+        className="home w-full  h-[93vh] md:flex md:justify-center md:items-center md:gap-36 md:scroll-mt-16 "
       >
-        <div className=" md:flex md:flex-col flex flex-col justify-center items-center pt-24 md:p-0">
+        <div className=" md:flex md:flex-col flex flex-col justify-center items-center pt-12 md:p-0">
           <h1 className="text-[#379498] md:text-6xl sm:5xl text-4xl uppercase  ">
             Grab your next
             <br />

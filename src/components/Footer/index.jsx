@@ -30,14 +30,14 @@ const index = () => {
               </span>
             </h1>
           </div>
-          <h1 className=" text-gray-300 md:text-2xl md:-mb-10 mt-5 text-xs">
+          <h1 className=" text-gray-300 md:text-2xl md:-mb-10 mt-5 text-xs break-av">
             Copyright©2023 By jagmeetsingh2921@gmail.com
           </h1>
         </div>
 
         <div className="grid md:grid-cols-4 md:pl-28 md:pt-16 md:mb-24 md:gap-0 grid-cols-2 gap-4 ml-11 md:ml-0 order-1 md:order-2 pt-4 ">
           <div className="text-white ">
-            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3]">
+            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3] pb-2">
               Locations
             </h1>
             <ul className="inline-block  md:text-md text-sm">
@@ -55,7 +55,7 @@ const index = () => {
             </ul>
           </div>
           <div className="text-white ">
-            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3] ">
+            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3] pb-2">
               Quick Links
             </h1>
             <ul className="inline-block  md:text-md text-sm">
@@ -73,7 +73,7 @@ const index = () => {
             </ul>
           </div>
           <div className="text-white ">
-            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3]">
+            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3] pb-2">
               Delivery Info
             </h1>
             <ul className="inline-block  md:text-md text-sm">
@@ -91,7 +91,7 @@ const index = () => {
             </ul>
           </div>
           <div className="text-white ">
-            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3] ">
+            <h1 className="md:text-2xl text-lg cursor-pointer md:hover:scale-105 hover:text-[#56eef3] pb-2 ">
               Follow Us
             </h1>
             <ul className="inline-block  md:text-md text-sm">

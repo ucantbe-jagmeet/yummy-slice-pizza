@@ -69,12 +69,12 @@ export const socialLinks = [
   },
   {
     id: 2,
-    href: "whatsapp://send?abid=919549122320",
-    title: "Whatsapp",
+    href: "mailto:abhishek.kumar85808@gmail.com ",
+    title: "Gmail",
   },
   {
     id: 3,
-    href: "mailto:abhishek.kumar85808@gmail.com ",
-    title: "Gmail",
+    href: "whatsapp://send?abid=919549122320",
+    title: "Whatsapp",
   },
 ];

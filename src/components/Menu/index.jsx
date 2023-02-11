@@ -13,7 +13,7 @@ const index = () => {
         </h1>
         <CTA />
 
-        <div className="my__cards h-auto w-[100vw] grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-2 ml-4  gap-x-0 gap-y-2 md:ml-12 md:gap-x-5 md:gap-y-5 md:pt-5 pt-3">
+        <div className="my__cards h-auto w-[100vw] grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-2 ml-2 gap-y-2 md:ml-12 md:gap-x-5 md:gap-y-5 md:pt-5 pt-3">
           <Cards />
         </div>
       </div>

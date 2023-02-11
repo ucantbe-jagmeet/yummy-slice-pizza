@@ -7,19 +7,23 @@ const index = () => {
         <h1 className="text-center text-[#379498] md:text-5xl text-3xl md:pt-5 pt-5 ">
           Contact
         </h1>
-        <div className="h-auto flex justify-evenly items-center flex-col md:flex-row pt-10 ">
+        <div className="h-auto flex justify-evenly items-center flex-col md:flex-row pt-5 ">
           <div className="left border-2 md:h-[74vh] md:w-[30vw] h-auto w-[90%] my-4 md:my-0 bg-[#379498] rounded-lg text-white hover:bg-[#42bbc0] duration-300 ">
             <h1 className="text-center uppercase text-4xl mt-5">Find Us </h1>
-            <p className="ml-5 text-3xl tracking-widest mt-4">
+            <p className="md:ml-5 md:text-2xl tracking-widest mt-4 ml-4 text-center">
               YUMMY SLICE PIZZA <br />
-              <span className="text-md">NEAR MANGE DI HATTI GAGRET</span>
+              <span className="block md:text-md ">
+                NEAR MANGE DI HATTI GAGRET
+              </span>
             </p>
 
-            <h2 className="text-center pt-10 text-2xl">Opening Hours</h2>
+            <h2 className="text-center md:pt-10 md:text-2xl pt-5 text-lg">
+              Opening Hours
+            </h2>
             <p className="text-center tracking-wider pt-4">
               Mon-Fri: 10:00 AM - 10:00 PM
             </p>
-            <p className="text-center tracking-wider pt-3">
+            <p className="text-center tracking-wider pt-2">
               Sat-Sun: 11:00 AM - 10:00 PM
             </p>
 
