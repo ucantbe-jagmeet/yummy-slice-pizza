@@ -65,13 +65,13 @@ const index = () => {
               <h1 className="text-white md:text-2xl tracking-wider capitalize hover:scale-105 text-md ">
                 {name}
               </h1>
-              <h2 className="tracking-wide md:text-[0.75rem] md:-mt-4 md:ml-0 hidden md:block">
+              <h2 className="tracking-wide md:text-[0.75rem] md:-mt-4 md:ml-0 hidden md:block text-gray-300">
                 Lorem ipsum dolor amet consectetur adipisicing dasa.
               </h2>
-              <h1 className=" text-white md:text-[0.95rem] hover:scale-105 text-[0.6rem] md:pb-0 mr-2">
+              <h1 className=" text-gray-200 md:text-[0.95rem] hover:scale-105 text-[0.6rem] md:pb-0 mr-2">
                 Starting: ₹ {price}
               </h1>
-              <h2 className="md:text-[0.7rem] md:items-start md:-mt-4 hidden md:block">
+              <h2 className="md:text-[0.7rem] md:items-start md:-mt-4 hidden md:block text-gray-300">
                 *Prices may vary on size of product
               </h2>
             </div>

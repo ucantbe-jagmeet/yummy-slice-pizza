@@ -17,14 +17,12 @@ const index = () => {
             <br />
             from here
           </h1>
-          <h1 className="md:text-xl text-md  font-semibold mt-2 md:mt-5 ">
+          <h1 className="md:text-xl text-md  font-semibold mt-2 md:mt-5 text-gray-500 md:mr-80">
             Pick Your Slice
           </h1>
-          <p className="my-4 hidden md:block ">
-            Pizza comes in square box, but circle in shape and triangular in
-            slices .<br />
-            Its Easy to understand a Pizza but its impossible to understand a
-            girl
+          <p className="my-4  hidden md:block w-[65vh] text-gray-500">
+            Well duh, pizza has cheese, tomatoes, onions, veggies, pepperoni,
+            sausage - I can see all the nutrients I need
           </p>
           <a
             href="#about"

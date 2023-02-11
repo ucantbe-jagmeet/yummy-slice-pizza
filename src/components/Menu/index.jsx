@@ -6,7 +6,7 @@ const index = () => {
     <>
       <div
         id="menu"
-        className="h-auto md:h-auto md:scroll-mt-16 overflow-hidden mb-10"
+        className="h-auto md:h-auto scroll-mt-16 overflow-hidden mb-10"
       >
         <h1 className="text-[#379498] md:text-5xl md:mt-6 text-center text-[1.6rem] mt-4">
           Order Your Favourite Food

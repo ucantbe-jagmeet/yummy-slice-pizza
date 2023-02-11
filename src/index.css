@@ -15,3 +15,7 @@ body{
 .swiper-pagination-bullet {
     background-color: #6dcdd0 !important;
 }
+.opacity-bg
+{
+    opacity: 0.8;
+}

@@ -19,35 +19,35 @@ const index = () => {
               <img
                 src={Img}
                 alt="Img here"
-                className="md:h-14  rounded-md h-10 md:mt-4"
+                className="md:h-14  rounded-md h-12 md:mt-4 hidden md:block"
               />
             </div>
-            <h1 className="text-white uppercase md:text-2xl md:my-3 font-semibold tracking-wider hidden md:block">
+            <h1 className="text-white uppercase md:text-2xl md:my-3 font-semibold tracking-wider ">
               A Dream By
             </h1>
             <img
               src={Abhi}
               alt="Owner's Image"
-              className=" cursor-pointer md:h-[42vh] border-white border-4 hover:scale-105 hover:shadow-lg hover:shadow-[#56c7cb] hover:rounded-lg transition duration-500 h-[36vh] border-1"
+              className=" cursor-pointer md:h-[42vh] border-white border-4 hover:scale-105 hover:shadow-lg hover:shadow-[#56c7cb] hover:rounded-lg transition duration-500 h-[40vh] border-1"
             />
             <h1 className="text-white  uppercase md:text-2xl text-xl md:my-3 font-semibold tracking-widest pb-2">
               Abhishek Kumar
             </h1>
           </div>
-          <div className="para  md:h-48 md:w-[40vw] border-2 md:mt-0 md:-mx-14 rounded-md   md:block h-36 w-[90%]  mt-10  ">
+          <div className="para  md:h-48 md:w-[40vw] border-2 md:mt-0 md:-mx-14 rounded-md   md:block h-32 w-[80%]  mt-10  ">
             <h1 className="text-[#379498] md:h-16 md:pt-2 md:text-3xl upper block bg-white md:w-[100%] rounded-b-xl md:pl-4 text-xl h-10 pl-4 pt-1 ">
               What we Aim
             </h1>
-            <p className="text-white px-3 py-2 hover:bg-[#42bbc0] duration-500 my-4 hidden md:block">
+            <p className="text-white px-3  hover:bg-[#42bbc0] duration-500 py-3 hidden md:block">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Similique atque, error, consequuntur vero doloremque ullam nihil
               doloribus praesentium quasi veniam perferendis eius iusto eveniet
               fugiat inventore eos? Omnis unde recusandae ex temporibus libero
               commodi iusto, voluptate excepturi error, saepe dolore!
             </p>
-            <p className="text-white px-3  hover:bg-[#42bbc0] duration-500 my-4 md:hidden ">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum in
-              nulla mollitia veniam fugiat omnis?
+            <p className=" px-3  hover:bg-[#42bbc0] duration-500  md:hidden pt-2 text-gray-200">
+              Being a chef is all about feeding people's soul , which is a part
+              of the story of all humanity
             </p>
           </div>
         </div>
