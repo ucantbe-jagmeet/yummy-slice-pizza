@@ -13,7 +13,7 @@ const index = () => {
     <>
       <div
         id="footer"
-        className="md:h-[70vh] h-[82vh] grid md:grid-cols-2 bg-[#379498] overflow-hidden"
+        className="md:h-[70vh] h-[90vh] grid md:grid-cols-2 bg-[#379498] overflow-hidden"
       >
         <div className="flex flex-col items-center justify-around m-10 md:mt-0 order-2 md:order-1 ">
           <div className=" h-[23vh] w-[78%] border-2 border-white rounded-lg flex flex-col md:flex-row items-center justify-around cursor-pointer  ">
