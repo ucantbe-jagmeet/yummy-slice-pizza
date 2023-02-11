@@ -13,7 +13,7 @@ const index = () => {
     <>
       <div
         id="footer"
-        className="md:h-[70vh] h-[80vh] grid md:grid-cols-2 bg-[#379498] overflow-hidden"
+        className="md:h-[70vh] h-[82vh] grid md:grid-cols-2 bg-[#379498] overflow-hidden"
       >
         <div className="flex flex-col items-center justify-around m-10 md:mt-0 order-2 md:order-1 ">
           <div className=" h-[23vh] w-[78%] border-2 border-white rounded-lg flex flex-col md:flex-row items-center justify-around cursor-pointer  ">
@@ -30,7 +30,7 @@ const index = () => {
               </span>
             </h1>
           </div>
-          <h1 className=" text-gray-300 md:text-2xl md:-mb-10 mt-5 text-xs break-av">
+          <h1 className=" text-gray-300 md:text-2xl md:-mb-10 mt-5 text-xs">
             Copyright©2023 By jagmeetsingh2921@gmail.com
           </h1>
         </div>
