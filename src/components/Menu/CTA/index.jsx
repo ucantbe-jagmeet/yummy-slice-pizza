@@ -7,13 +7,13 @@ const index = () => {
         <a
           href={Menu}
           download={true}
-          className=" md:mx-3 md:py-2 md:px-3 bg-[#379498] outline-none rounded-lg  text-white md:text-xl py-1 px-2 text-lg w-40 mx-2 hover:text-[#47dde2] hover:bg-white  hover:border-[#47dde2] hover:border-2 transition cursor-pointer md:hover:scale-105 tracking-wider  duration-500"
+          className=" md:mx-3 md:py-2 md:px-3 bg-[#379498] outline-none rounded-lg  text-white md:text-xl py-1 px-2 text-md w-40 mx-2 hover:text-[#47dde2] hover:bg-white  hover:border-[#47dde2] hover:border-2 transition cursor-pointer md:hover:scale-105 tracking-wider  duration-500 "
         >
           Download Menu
         </a>
         <a
           href="#"
-          className="md:mx-3 md:py-2 md:px-3 bg-[#379498] outline-none rounded-lg text-white md:text-xl py-1 px-2 text-lg w-40 mx-2 hover:text-[#47dde2] hover:bg-white  hover:border-[#47dde2] hover:border-2 transition cursor-pointer md:hover:scale-105 tracking-wider  duration-500"
+          className="md:mx-3 md:py-2 md:px-3 bg-[#379498] outline-none rounded-lg text-white md:text-xl py-1 px-2 text-md w-40 mx-2 hover:text-[#47dde2] hover:bg-white  hover:border-[#47dde2] hover:border-2 transition cursor-pointer md:hover:scale-105 tracking-wider  duration-500"
         >
           Today's Special
         </a>

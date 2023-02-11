@@ -31,7 +31,7 @@ const Nav = () => {
             );
           })}
         </ul>
-        <div className="md:-ml-60 ml-[8.2rem] ">
+        <div className="md:-ml-60 ml-[8.05rem] ">
           <img src={Img} alt="Img here" className="h-14 mb-1 " />
         </div>
 
