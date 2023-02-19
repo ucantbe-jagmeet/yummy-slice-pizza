@@ -1,3 +1,8 @@
+import AVTR1 from "./images/AVTR1.png";
+import AVTR2 from "./images/AVTR2.jpeg";
+import AVTR3 from "./images/AVTR3.png";
+import AVTR4 from "./images/AVTR4.png";
+
 export const data = [
   {
     avatar: AVTR1,
