@@ -86,7 +86,7 @@ const index = () => {
     <>
       <div
         id="reviews"
-        className="h-[auto]  bg-[#379498] text-center scroll-mt-16 flex flex-col items-center pb-16"
+        className="h-[auto]  bg-[#379498] text-center scroll-mt-16 flex flex-col items-center pb-16 relative"
       >
         <h1 className="text-white text-center pt-7 tracking-wider md:text-[1rem] text-lg">
           Reviews From Customers
@@ -94,14 +94,14 @@ const index = () => {
         <h1 className="text-white text-center md:text-3xl uppercase tracking-widest text-3xl pt-2 mb-10">
           What they Say
         </h1>
-        <div className="container w-[80%] h-90vh  p-5 grid grid-cols-3 gap-5 ">
-          <ul className="space-y-5">
+        <div className="container w-[75%] md:h-90vh  md:p-5 md:grid md:grid-cols-3 md:gap-5 flex ">
+          <ul className="space-y-8">
             {data1.map((links) => {
               const { id, avatar, name, instagram, review } = links;
               return (
                 <>
                   <li key={id}>
-                    <section className="card h-auto max-h-min py-2 bg-white rounded-lg">
+                    <section className="card md:h-auto  py-2 bg-white rounded-lg">
                       <header className="flex items-center py-2">
                         <img
                           src={avatar}
@@ -109,9 +109,9 @@ const index = () => {
                           className=" w-14 rounded-full h-14 ml-4"
                         />
                         <div className="ml-5 ">
-                          <h1 className=" text-xl tracking-wider ">{name}</h1>
-                          <article className=" flex items-baseline justify-end">
-                            <div className="text-sm text-red-500 mr-1 ">
+                          <h1 className=" text-xl">{name}</h1>
+                          <article className=" flex items-baseline md:justify-end">
+                            <div className="text-sm text-red-500 mr-1  ">
                               <BsInstagram />
                             </div>
                             <p className="text-[13px]">{instagram}</p>
@@ -127,7 +127,7 @@ const index = () => {
               );
             })}
           </ul>
-          <ul className="space-y-5">
+          <ul className="space-y-8 hidden sm:block">
             {data2.map((links) => {
               const { id, avatar, name, instagram, review } = links;
               return (
@@ -141,7 +141,7 @@ const index = () => {
                           className=" w-14 rounded-full h-14 ml-4"
                         />
                         <div className="ml-5 ">
-                          <h1 className=" text-xl tracking-wider ">{name}</h1>
+                          <h1 className=" text-xl">{name}</h1>
                           <article className=" flex items-baseline justify-end">
                             <div className="text-sm text-red-500 mr-1 ">
                               <BsInstagram />
@@ -159,7 +159,7 @@ const index = () => {
               );
             })}
           </ul>
-          <ul className="space-y-5">
+          <ul className="space-y-8 hidden lg:block">
             {data3.map((links) => {
               const { id, avatar, name, instagram, review } = links;
               return (
@@ -173,7 +173,7 @@ const index = () => {
                           className=" w-14 rounded-full h-14 ml-4"
                         />
                         <div className="ml-5 ">
-                          <h1 className=" text-xl tracking-wider ">{name}</h1>
+                          <h1 className=" text-xl  ">{name}</h1>
                           <article className=" flex items-baseline justify-end">
                             <div className="text-sm text-red-500 mr-1 ">
                               <BsInstagram />
@@ -191,6 +191,11 @@ const index = () => {
               );
             })}
           </ul>
+        </div>
+        <div className=" w-[75%] inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-[#379498] mx-auto md:pt-72 pt-32 pb-16  pointer-events-none  absolute ">
+          <button className=" px-4 py-2 rounded-lg border-2 text-white bg-[#379498] mt-4 hover:scale-105 hover:border-2 hover:bg-white duration-300 hover:border-[#42bbc0] hover:text-[#42bbc0] cursor-pointer mb-5">
+            View More
+          </button>
         </div>
       </div>
     </>
