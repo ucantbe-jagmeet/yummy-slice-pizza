@@ -43,7 +43,7 @@ const index = () => {
               Similique atque, error, consequuntur vero doloremque ullam nihil
               doloribus praesentium quasi veniam perferendis eius iusto eveniet
               fugiat inventore eos? Omnis unde recusandae ex temporibus libero
-              commodi iusto, voluptate excepturi
+              commodi iusto, voluptate
             </p>
             <p className=" px-3  hover:bg-[#42bbc0] duration-500  md:hidden pt-2 text-gray-200">
               Being a chef is all about feeding people's soul , which is a part

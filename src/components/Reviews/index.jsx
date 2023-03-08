@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 import AVTR1 from "./images/AVTR1.png";
 import AVTR2 from "./images/AVTR2.jpeg";
@@ -12,6 +12,7 @@ import AVTR9 from "./images/AVTR9.jpeg";
 
 const data1 = [
   {
+    id: 1,
     avatar: AVTR1,
     name: "Jasmeet Singh",
     instagram: "@jasmeets_6575",
@@ -19,6 +20,7 @@ const data1 = [
       "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus risus sed facilisis       egestas.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
   },
   {
+    id: 2,
     avatar: AVTR2,
     name: "Davy Singh",
     instagram: "@davinder_s",
@@ -26,15 +28,33 @@ const data1 = [
       "      egestas.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
   },
   {
+    id: 3,
     avatar: AVTR3,
     name: "Jagmeet Singh",
     instagram: "@jagmeets_6575",
     review:
       "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus risus      egestas.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
   },
+  {
+    id: 4,
+    avatar: AVTR1,
+    name: "Jasmeet Singh",
+    instagram: "@jasmeets_6575",
+    review:
+      "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus risus sed facilisis       egestas.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
+  },
+  {
+    id: 5,
+    avatar: AVTR2,
+    name: "Davy Singh",
+    instagram: "@davinder_s",
+    review:
+      "      egestas.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
+  },
 ];
 const data2 = [
   {
+    id: 1,
     avatar: AVTR4,
     name: "Pankaj Kumar",
     instagram: "@pankaj_sankhla",
@@ -42,6 +62,7 @@ const data2 = [
       "  bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
   },
   {
+    id: 2,
     avatar: AVTR5,
     name: "Prince Kumar",
     instagram: "@user_not_found",
@@ -49,16 +70,33 @@ const data2 = [
       "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
   },
   {
+    id: 3,
     avatar: AVTR6,
     name: "Arun Kumar",
     instagram: "@arun_kumar",
     review:
       "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus risus sed facilisis       egestas.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi",
   },
+  {
+    id: 4,
+    avatar: AVTR4,
+    name: "Pankaj Kumar",
+    instagram: "@pankaj_sankhla",
+    review:
+      "  bibendum nisl, ut tincidunt metus. Curabitur CurabiturCu  rabiturmattis sem nisi, vel sollicitudin",
+  },
+  {
+    id: 5,
+    avatar: AVTR5,
+    name: "Prince Kumar",
+    instagram: "@user_not_found",
+    review:
+      "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
+  },
 ];
-
 const data3 = [
   {
+    id: 1,
     avatar: AVTR7,
     name: "Davy Singh",
     instagram: "@davinder_s",
@@ -66,6 +104,7 @@ const data3 = [
       "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
   },
   {
+    id: 2,
     avatar: AVTR8,
     name: "Jagmeet Singh",
     instagram: "@jagmeets_6575",
@@ -73,20 +112,47 @@ const data3 = [
       "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus risus sed facilisis       egestas.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
   },
   {
+    id: 3,
     avatar: AVTR9,
     name: "Harsh Kumar",
     instagram: "@hypr_coffin",
     review:
       "Lorem Lorem ipsum dolor si      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
   },
+  {
+    id: 4,
+    avatar: AVTR7,
+    name: "Davy Singh",
+    instagram: "@davinder_s",
+    review:
+      "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
+  },
+  {
+    id: 5,
+    avatar: AVTR8,
+    name: "Jagmeet Singh",
+    instagram: "@jagmeets_6575",
+    review:
+      "Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus risus sed facilisis       egestas.      Nullam eu bibendum nisl, ut tincidunt metus. Curabitur CurabiturCurabiturmattis sem nisi, vel sollicitudin",
+  },
 ];
 
 const index = () => {
+  const [Btn, setBtn] = useState(false);
+  const handleBtn = () => {
+    console.log("btn is clicked");
+    setBtn(!Btn);
+  };
+
   return (
     <>
       <div
         id="reviews"
-        className="h-[auto]  bg-[#379498] text-center scroll-mt-16 flex flex-col items-center pb-16 relative"
+        className={
+          !Btn
+            ? "h-[110vh]  bg-[#379498] text-center scroll-mt-16 flex flex-col items-center pb-32 mb-28 relative overflow-hidden "
+            : "h-[auto]  bg-[#379498] text-center scroll-mt-16 flex flex-col items-center pb-20 relative "
+        }
       >
         <h1 className="text-white text-center pt-7 tracking-wider md:text-[1rem] text-lg">
           Reviews From Customers
@@ -94,8 +160,8 @@ const index = () => {
         <h1 className="text-white text-center md:text-3xl uppercase tracking-widest text-3xl pt-2 mb-10">
           What they Say
         </h1>
-        <div className="container w-[75%] md:h-90vh  md:p-5 md:grid md:grid-cols-3 md:gap-5 flex ">
-          <ul className="space-y-8">
+        <div className="w-[75%] md:h-90vh  md:p-5 md:grid md:grid-cols-3 md:gap-5 flex  ">
+          <ul className="space-y-8 ">
             {data1.map((links) => {
               const { id, avatar, name, instagram, review } = links;
               return (
@@ -192,9 +258,12 @@ const index = () => {
             })}
           </ul>
         </div>
-        <div className=" w-[75%] inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-[#379498] mx-auto md:pt-72 pt-32 pb-16  pointer-events-none  absolute ">
-          <button className=" px-4 py-2 rounded-lg border-2 text-white bg-[#379498] mt-4 hover:scale-105 hover:border-2 hover:bg-white duration-300 hover:border-[#42bbc0] hover:text-[#42bbc0] cursor-pointer mb-5">
-            View More
+        <div className=" w-[100%] bottom-0 flex justify-center  bg-gradient-to-t from-white mx-auto md:pt-40 pt-64 pb-10 absolute ">
+          <button
+            className="px-4 py-2 rounded-lg border-2 text-white bg-[#379498] mt hover:scale-105 hover:border-2 hover:bg-white duration-300 hover:border-[#42bbc0] hover:text-[#42bbc0] cursor-pointer  "
+            onClick={() => handleBtn()}
+          >
+            {!Btn ? "View More" : "Ok Got It"}
           </button>
         </div>
       </div>
